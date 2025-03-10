@@ -27,7 +27,7 @@ function setInputHandler(inputIdentifier, newValue) {
     <>
     <Header></Header>
     <UserInput onChange = {setInputHandler} userInput={ inputs }></UserInput>
-    {!validInputs && <p>please input a valid duration</p>}
+    {!validInputs && <p className="center">please input a valid duration</p>}
     {validInputs && <Output userInput = { inputs }></Output> }
     </>
   )
